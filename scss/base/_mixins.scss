@@ -1,0 +1,114 @@
+.full_btn_style {
+    border-radius: 20px;
+    background: var(--purple);
+    color: #fff;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    border: 2px solid var(--purple);
+    transition: 0.3s all;
+    &:hover {
+        background: none;
+        i {
+            color: var(--purple);
+        }
+    }
+    &:active {
+        scale: 0.95;
+    }
+}
+
+.title {
+    font-size: var(--title);
+    font-weight: 600;
+    line-height: 120%;
+    color: #fff;
+    text-transform: capitalize;
+}
+
+.subtitle {
+    font-size: var(--subtitle);
+    color: #fff;
+    text-transform: capitalize;
+}
+
+.little_title {
+    font-size: 22px;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: #fff;
+}
+
+.owner_style {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    margin-top: 10px;
+    color: #fff;
+}
+
+@mixin up-animation {
+    cursor: pointer;
+    transition: 0.3s all;
+    &:hover {
+        transform: translate(5px, -5px);
+        box-shadow: -10px 10px 30px 5px #000;
+    }
+}
+
+.heading_style {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    button {
+        padding: 19px 50px;
+        border-radius: 20px;
+        background: none;
+        border: 2px solid var(--purple);
+        color: #fff;
+        font-weight: 600;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 12px;
+        i {
+            color: var(--purple);
+        }
+        transition: 0.3s all;
+        &:hover {
+            background: var(--purple);
+            i {
+                color: #fff;
+            }
+        }
+        &:active {
+            scale: 0.95;
+        }
+    }
+}
+
+.form_style {
+    position: relative;
+    display: flex;
+    align-items: center;
+    input {
+        width: 100%;
+        border-radius: 20px;
+        border: none;
+        outline: none;
+        height: 60px;
+        padding-left: 20px;
+    }
+    button {
+        position: absolute;
+        right: 0;
+        height: 60px;
+        padding: 19px 50px;
+        &:hover {
+            color: var(--purple);
+            background: #fff;
+        }
+    }
+}

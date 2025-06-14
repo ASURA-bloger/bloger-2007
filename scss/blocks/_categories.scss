@@ -1,0 +1,25 @@
+.categories {
+    .categories__items {
+        padding-block: var(--padding-block-size);
+        .categories__content {
+            margin-top: var(--margin-top-size);
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+            .categories__item {
+                @include up-animation;
+                background: var(--dark-gray);
+                border-radius: 20px;
+                .categories__item-img {
+                    width: 100%;
+                }
+                .categories__item-title {
+                    padding: 20px 30px 25px 30px;
+                    color: #fff;
+                    font-weight: 600;
+                    font-size: 22px;
+                }
+            }
+        }
+    }
+}

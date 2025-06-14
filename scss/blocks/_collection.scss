@@ -1,0 +1,36 @@
+
+.collection {
+    .collection__items {
+        padding-block: var(--padding-block-size);
+        .collection__content {
+            margin-top: var(--margin-top-size);
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            .collection__item {
+                .collection__item-img {
+                    width: 100%;
+                    border-radius: 20px;
+                    @include up-animation;
+                }
+                .collection__item-icons {
+                    margin-top: 15px;
+                    margin-bottom: 15px;
+                    display: grid;
+                    grid-template-columns: repeat(3, 1fr);
+                    gap: 15px;
+                    img {
+                        width: 100%;
+                        border-radius: 20px;
+                        @include up-animation;
+                    }
+                    button {
+                        font-family: var(--space-mono);
+                        font-weight: 700;
+                        font-size: 22px;
+                    }
+                }
+            }
+        }
+    }
+}

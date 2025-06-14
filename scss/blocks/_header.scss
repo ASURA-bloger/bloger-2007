@@ -1,0 +1,45 @@
+.header {
+    padding-inline: var(--header-inline-padding);
+    padding-block: var(--header-block-padding);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    background: var(--dark);
+    .header__menu {
+        display: flex;
+        align-items: center;
+        list-style: none;
+        gap: 50px;
+        li {
+            a {
+                font-weight: 600;
+                color: #fff;
+                text-decoration: none;
+                transition: 0.3s all;
+                &::after {
+                    content: '';
+                    display: block;
+                    height: 2px;
+                    width: 0%;
+                    border-radius: 2px;
+                    background: var(--purple);
+                    transition: 0.3s all;
+                }
+                &:hover:after {
+                    width: 100%;
+                }
+            }
+            button {
+                padding: 19px 30px;
+               
+            }
+        }
+    }
+    .header__burger{
+        display: none;
+    }
+}

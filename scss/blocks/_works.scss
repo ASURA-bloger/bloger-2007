@@ -1,0 +1,27 @@
+.works {
+    .works__items {
+        padding-block: var(--padding-block-size);
+        .works__content {
+            margin-top: 48px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            .works__item {
+                background: var(--dark-gray);
+                border-radius: 20px;
+                padding: 10px 30px 30px 30px;
+                text-align: center;
+                .works__item-img {
+                    width: 250px;
+                }
+                .works__item-text {
+                    margin-top: 20px;
+                    .works__item-descr {
+                        color: #fff;
+                        margin-top: 10px;
+                    }
+                }
+            }
+        }
+    }
+}

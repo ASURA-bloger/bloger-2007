@@ -1,0 +1,43 @@
+.discover {
+    .discover__items {
+        padding-block: var(--padding-block-size);
+        .discover__content {
+            margin-top: var(--margin-top-size);
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            .discover__item {
+                background: var(--dark-gray);
+                border-radius: 20px;
+                .discover__item-img {
+                    width: 100%;
+                }
+                .discover__item-text {
+                    padding: 20px 30px 25px 30px;
+                    .discover__item-owner {
+                        margin-top: 5px;
+                    }
+                    .discover__item-info {
+                        margin-top: 25px;
+                        display: flex;
+                        justify-content: space-between;
+                        .info_item {
+                            .info_title {
+                                font-family: var(--space-mono);
+                                font-size: 12px;
+                                color: var(--gray);
+                            }
+                            .info_value {
+                                font-family: var(--space-mono);
+                                color: #fff;
+                            }
+                            &:last-child {
+                                text-align: right;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

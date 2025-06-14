@@ -1,0 +1,77 @@
+.mushroom {
+    background: linear-gradient(
+            180deg,
+            rgba(162, 89, 255, 0),
+            rgb(162, 89, 255) 100%
+        ),
+        url('../img/mushroom-bg.png') center center/cover no-repeat fixed;
+        padding-top: 360px;
+        padding-bottom: 60px;
+    .mushroom__items {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 30px;
+        .mushroom__owner {
+            border-radius: 20px;
+            background: var(--dark);
+            padding: 10px 20px;
+        }
+        .mushroom__title {
+            color: #fff;
+            font-size: 51px;
+            font-weight: 600;
+            line-height: 110%;
+            text-transform: capitalize;
+        }
+        .mushroom__btn {
+            padding: 22px 50px;
+            background: #fff;
+            color: #000;
+            border-color: #fff;
+            &:hover {
+                background: none;
+                color: #fff;
+                i {
+                    color: #fff;
+                }
+            }
+        }
+        .mushroom__timer {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            width: 295px;
+            background: #3b3b3b80;
+            border-radius: 20px;
+            padding: 30px;
+            .mushroom__timer-title {
+                font-family: var(--space-mono);
+                color: #fff;
+                font-size: 12px;
+            }
+            .mushroom__timer-content {
+                margin-top: 10px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                color: #fff;
+                font-size: 28px;
+                font-weight: 700;
+                .mushroom__timer-time {
+                    .mushroom__timer-num {
+                        font-family: var(--space-mono);
+                        font-size: 38px;
+                        font-weight: 700;
+                    }
+                    .mushroom__timer-name {
+                        margin-top: 5px;
+                        font-size: 12px;
+                        font-family: var(--space-mono);
+                    }
+                }
+            }
+        }
+    }
+}
